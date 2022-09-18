@@ -1,0 +1,31 @@
+1) Font URl and name
+2) Colors 
+body
+#f0f0f0;
+
+
+3) Images 
+
+4) Font Name Icon and URL 
+ <i class="fas fa-chevron-down" ></i>
+ <i class="fas fa-times" ></i>
+
+'\f075' 
+font-family: 'Font Awesome 5 Free' 
+color:#2ecc71
+#3498db; 
+
+
+
+box-shadow 
+
+box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+
+5)HTML scehma 
+div container 
+  faq 
+    h1 
+
+    p.faq-text
+    button.faq-toggle
+   
