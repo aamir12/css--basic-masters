@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container flex">
+            <a href="#" class="logo">My Logo</a>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">TV Shows</a></li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">My List</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Write anything">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+         
+    </header>
+    <div class="banner">
+        <div class="container flex g10">
+            <div class="content">
+                <h2>Responsive Header Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni libero quisquam ducimus facere, repellendus architecto porro itaque tempora culpa unde in recusandae obcaecati, veniam dignissimos, dolorum illo vel incidunt. Quo in accusantium iste, sunt facere obcaecati rerum perferendis dolore, explicabo itaque labore praesentium, dignissimos neque eius! A provident veniam non sed mollitia! Delectus quibusdam iusto ducimus vitae praesentium dolores aut eos minus totam aperiam excepturi maiores provident corporis</p>
+                <a href="#">Read More</a>
+            </div>
+            <img src="image.png" class="image" alt="image">
+        </div>
+       
+    </div>
+</body>
+
+<script>
+    window.addEventListener('scroll',()=>{
+      const header = document.querySelector(".header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</html>

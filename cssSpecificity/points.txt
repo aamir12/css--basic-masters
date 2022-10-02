@@ -1,0 +1,119 @@
+1) Css read top to bottom 
+ex: 
+
+.header{
+    color:red;
+}
+
+// this will apply
+.header{  
+    color:blue;
+}
+
+2) select(HTML Tag)<class<id
+
+ex: 
+<h1 id="header-id" class="header"> Header</h1>
+//This will apply
+ #header-id { 
+    color:black;
+}
+
+.header{
+    color:red;
+}
+
+h1{
+    color:blue;
+}
+
+
+Specificity 
+
+0,0,0,0
+id
+0,1,0,0
+
+class
+0,0,1,0
+
+
+selector
+0,0,0,1
+
+inline-style 
+1,0,0,0
+
+!important
+1,0,0,0,0
+
+3) 
+<h1  class="header green"> Header</h1>
+
+.header{
+    color:red;
+}
+
+//this will apply because of order 
+.green{
+    color:green;
+}
+
+4) select class combination is higher than class
+<h1  class="header green"> Header</h1>
+//this will apply because of order
+0,0,1,1
+h1.header{
+    color:red;
+}
+
+ 0,0,1,0
+.green{
+    color:green;
+}
+
+
+5) Parent child Specificity is higher than class
+
+4) 
+<h1  class="header green"> Header</h1>
+
+0,0,1,1
+h1.header{
+    color:red;
+}
+
+//this will apply 
+0,0,1,12
+body .green{
+    color:green;
+}
+
+
+5) 
+<h1  class="header header1"> Header</h1>
+
+body > .header{
+    color:black;
+}
+
+body + .header{
+    color:black;
+}
+
+//this will apply
+body .header1{
+    color:black;
+}
+
+6)
+<h1  id="header"> Header</h1>
+
+#header{
+    color:cyan;
+}
+
+//this will apply
+body #header{
+    color:black;
+}

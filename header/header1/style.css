@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+}
+
+
+
+.header {
+    position: fixed;
+    top:0;
+    left:0; 
+    background: #5a629a;
+    z-index:10;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.sticky{
+    box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 15px 100px;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    font-size: 1.5rem;
+    color:#fff;
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    list-style: none;
+    margin:0 10px 0 0px;
+}
+
+.navigation li a{
+  color:#fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navigation li a:hover { 
+    color:#ffeb3b;
+}
+
+.search-container{
+    width: 300px;
+    height: 40px;
+    position: relative;
+}
+
+.search-container input {
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    padding: 0px 10px 0px 45px;
+    color:#fff;
+}
+
+.search-container .fa-search{
+    position: absolute;
+    color:#fff;
+    left: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    border-right: solid 1px #ccc;
+    padding-right: 8px;
+}
+
+.search-container input::placeholder {
+    color :#fff;
+}
+
+.banner {
+    padding:150px 0px;
+    background-color: #424777;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.g10{
+    gap:20px;
+}
+
+.banner .content{
+    max-width: 600px;
+    width: 100%;
+}
+
+.banner .content h2 {
+    color:#fff;
+    font-size: 3rem;
+}
+
+.banner .content p {
+    color:#fff;
+    font-size: 1rem;
+}
+
+.banner .content a {
+  color :#fff;
+  padding: 10px 15px;
+  margin-top:10px;
+  text-decoration: none;
+  background-color: #fff;
+  color:#424777;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.banner .image {
+    filter:invert(1);
+    max-width: 390px;
+    width: 100%;
+}
+
+@media  screen and (max-width:992px) {
+    .header .flex {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    .banner .flex {
+        flex-direction: column;
+    }
+
+    .banner .content {
+        order:2;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        padding: 20px 50px;
+        overflow: hidden;
+    }
+}
+
